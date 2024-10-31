@@ -1,0 +1,15 @@
+import tkinter as tk
+window = tk.Tk()
+window.title("tic-tac-toe")
+window.geometry("600x600")
+
+label = tk.Label (window, text = "Tic-tac-toe", font = ("Arial", 30), bg = "red", fg = "yellow")
+label.place(x=75,y=0)
+labelten = tk.Label (window, text = "Em ten la Quan", font = ("Arial", 30), bg = "yellow", fg = "red")
+labelten.place(x=75,y=100)
+labeltuoi = tk.Label (window, text = "Em hoc lop 7", font = ("Arial", 30), bg = "blue", fg = "red")
+labeltuoi.place(x=75,y=200)
+labellop = tk.Label (window, text = "Em hoc lop 7A9", font = ("Arial", 30), bg = "red", fg = "blue")
+labellop.place(x=75,y=300)
+labeltaolao = tk.Label (window, text = "hi", font = ("Times New Roman", 30, "bold italic underline overstrike"))
+labeltaolao.place(x=75,y=400)

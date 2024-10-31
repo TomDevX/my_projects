@@ -1,0 +1,6 @@
+for i in range(20):
+    turtle_red.forward(30)
+    turtle_blue.forward(40)
+    turtle_green.forward(20)
+    turtle_orange.forward(50)
+    turtle_yellow.forward(30)
