@@ -1,0 +1,41 @@
+# Title: A. Strong Password
+
+## Summary:
+- insert 1 letter
+- time to insert first letter = 2 secs
+- if previous letter is the same as now = 1 sec else 2 secs
+- insert a lowercase Latin letter into his password so that the resulting password takes the maximum possible amount of time to type.
+
+## Objective:
+- Output the string that has max time to type
+
+## Input Format:
+- Describe the input format and structure.
+
+## Output Format:
+- Describe the output format.
+
+## Constraints:
+- List the constraints provided in the problem.
+
+## Examples:
+abacaba is  14
+aaabacc is 11
+### Input:
+
+4
+a
+aaa
+abb
+password
+
+### Output:
+
+wa
+aada
+abcb
+pastsword
+
+## Solution Strategy (Optional):
+- make a isfirst bool
+- find a character to put in the string so that it doesn't a duplicate of the previous available character
