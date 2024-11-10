@@ -1,0 +1,50 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+enum Operation {
+    PLUS,
+    SUBTRACT,
+    MULTIPLY,
+    DIVIDE,
+    SQRT,
+    POW
+};
+
+int main(){
+    int a, b;
+    int operative;
+    cout << "Enter number#1: ";
+    cin >> a;
+
+    cout << "Enter operative (0-5): ";
+    cin >> operative;
+
+    cout << "Enter number#2: ";
+    cin >> b;
+
+    switch(static_cast<Operation>(operative)){
+        case PLUS:
+            cout << a + b;
+            break;
+        case SUBTRACT:
+            cout << a - b;
+            break;
+        case MULTIPLY:
+            cout << a * b;
+            break;
+        case DIVIDE:
+            cout << a / b;
+            break;
+        case SQRT:
+            cout << sqrt(static_cast<double>(a)) << " " << sqrt(static_cast<double>(b));
+            break;
+        case POW:
+            cout << pow(static_cast<double>(a), static_cast<double>(b));
+            break;
+        default:
+            cout << "Invalid operative";
+            break;
+    }
+}
